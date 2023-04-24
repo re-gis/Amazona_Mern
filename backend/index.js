@@ -48,11 +48,10 @@ app.use((error, req, res, next) => {
   res.status(500).send({ message: error.message });
 });
 
-if (PORT) {
-  app.listen(PORT, () => {
-    console.log("Server listening port 3000...");
-  });
-}
+// if (PORT) {
+app.listen(PORT, () => {
+  console.log("Server listening port 3000...");
+});
+// }
 
-
-module.exports = app
+// export default app
